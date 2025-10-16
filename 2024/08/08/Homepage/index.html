@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Homepage:3 | Under World</title>
+    <meta name="author" content="EuJeo" />
+    <meta name="description" content="Welcome to EuJeo(Jinhao Cui)'s homepage" />
+    <meta name="keywords" content="" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="icon" href="/images/face.jpg" />
+    <link rel="preconnect" href="https://s4.zstatic.net" />
+<script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.cn" />
+<link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.cn/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap"
+/>
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <img src="/images/down.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>UNDER WORLD</span>
+        </a>
+        
+        <a href="/2024/08/08/Homepage">
+            <i class="fa-solid fa-user fa-fw"></i>
+            <span>&ensp;Homepage</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;UNDER WORLD</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/2024/08/08/Homepage">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-user fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Homepage</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div class="article">
+    <div>
+        <h1>Homepage:3</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/8/8
+        </span>
+        
+        <span class="category">
+            <a href="/categories/Homepage/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                Homepage
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/cv/" style="color: #ff7d73">
+                    cv
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <img  src=/images/avatar_Cui.jpg  width="150"  align="right"  />
+
+<h1 id="Jinhao-Cui"><a href="#Jinhao-Cui" class="headerlink" title="Jinhao Cui"></a>Jinhao Cui</h1><p>
+<i class="fa-solid fa-envelope"></i> 
+cuijinhao@stu.hit.edu.cn 
+&nbsp&nbsp&nbsp&nbsp
+<i class="fa-solid fa-phone"></i>
++86-15038250877
+</p>
+
+ 
+<h2 id="Research-Interest"><a href="#Research-Interest" class="headerlink" title="Research Interest"></a>Research Interest</h2><hr style="border: 2px solid #D9D9D9;" width= 70% />
+ 
+<p><em><strong>Graph Contrastive Learning, Graph Representation Learning, Data Mining</strong></em></p>
+<h2 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h2><hr style="border: 2px solid #D9D9D9;" />
+
+<ul>
+<li><p>2024 - <em>present</em>  <i class="fa-solid fa-bookmark"></i> <strong>PhD, Computer Science and Technology, Harbin Institute of Technology (ShenZhen), <br />PhD Advisor: Qing Liao</strong></p>
+</li>
+<li><p>2021 - 2023 &emsp; <i class="fa-solid fa-bookmark"></i> <strong>M.Ec., Computer Technology, Harbin Institute of Technology(ShenZhen), <br />M.Ec. Advisor: Qing Liao</strong></p>
+</li>
+<li><p>2017 - 2021 &emsp; <i class="fa-solid fa-bookmark"></i> <strong>B.E., Information Management and Information System, Harbin Institute of Technology</strong></p>
+</li>
+<li><p>2017 - 2021 &emsp; <i class="fa-solid fa-bookmark"></i> <strong>Minor B.E., Data Science and Big Data Technology, Harbin Institute of Technology</strong></p>
+</li>
+</ul>
+<h2 id="Research-Publications"><a href="#Research-Publications" class="headerlink" title="Research Publications"></a>Research Publications</h2><hr style="border: 2px solid #D9D9D9;" />
+ 
+<p><i class="fa-solid fa-paperclip"></i> <strong>Jinhao Cui</strong>, Heyan Chai, Yanbin Gong, Ye Ding, Zhongyun Hua, Cuiyun Gao and Qing Liao. “<a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/abstract/document/10191518">MocGCL: Molecular Graph Contrastive Learning via Negative Selection</a>“, 2023 International Joint Conference on Neural Networks (IJCNN), Gold Coast, Australia, 2023, pp. 1-8.</p>
+<p><i class="fa-solid fa-paperclip"></i> <strong>Jinhao Cui</strong>, Heyan Chai, Xu Yang, Ye Ding, Binxing Fang and Qing Liao. “<a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/abstract/document/10597692">SGCL: Semantic-aware Graph Contrastive Learning with Lipschitz Graph Augmentation</a>“, 2024 IEEE 40th International Conference on Data Engineering (ICDE), Utrecht, Netherlands, 2024, pp. 3028-3041.</p>
+<p><i class="fa-solid fa-paperclip"></i> Heyan Chai, <strong>Jinhao Cui</strong>, Siyu Tang, Ye Ding, Xinwang Liu, Binxing Fang and Qing Liao. “<a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/abstract/document/10315761">MG-SIN: Multigraph Sparse Interaction Network for Multitask Stance Detection</a>“, IEEE Transactions on Neural Networks and Learning Systems, 2023.</p>
+<p><i class="fa-solid fa-paperclip"></i> Heyan Chai, <strong>Jinhao Cui</strong>, Ye Wang, Min Zhang, Binxing Fang and Qing Liao. “<a target="_blank" rel="noopener" href="https://aclanthology.org/2023.acl-long.144/">Improving Gradient Trade-offs between Tasks in Multi-task Text Classification</a>“, Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), 2023, Toronto, Canada, pages 2565–2579. </p>
+<p><i class="fa-solid fa-paperclip"></i> Heyan Chai, Siyu Tang, <strong>Jinhao Cui</strong>, Ye Ding, Binxing Fang, and Qing Liao. “<a target="_blank" rel="noopener" href="https://aclanthology.org/2022.emnlp-main.193/">Improving Multi-task Stance Detection with Multi-task Interaction Network</a>“, In Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing, 2022, Abu Dhabi, United Arab Emirates, pages 2990–3000.</p>
+<p><i class="fa-solid fa-paperclip"></i> Ziyi Yao, Heyan Chai, <strong>Jinhao Cui</strong>, Siyu Tang, and Qing Liao. “<a target="_blank" rel="noopener" href="https://aclanthology.org/2023.semeval-1.129/">HITSZQ at SemEval-2023 Task 10: Category-aware Sexism Detection Model with Self-training Strategy</a>“, In Proceedings of the 17th International Workshop on Semantic Evaluation (SemEval-2023), 2023, Toronto, Canada, pages 934–940.</p>
+<h2 id="Miscellaneous-Experience"><a href="#Miscellaneous-Experience" class="headerlink" title="Miscellaneous Experience"></a>Miscellaneous Experience</h2><hr style="border: 2px solid #D9D9D9;" />
+
+<h3 id="Awards-and-Achievements"><a href="#Awards-and-Achievements" class="headerlink" title="Awards and Achievements"></a>Awards and Achievements</h3><p><i class="fa-solid fa-award"></i> <em>2023</em>, <strong>Patent</strong>, A biomolecule classification method and device based on graph contrastive learning, CN115631798B.</p>
+<p><i class="fa-solid fa-award"></i> <em>2022</em>, <strong>Academic Scholarship</strong>, Harbin Institute of Technology (ShenZhen).</p>
+<p><i class="fa-solid fa-award"></i> <em>2021</em>, <strong>Academic Scholarship</strong>, Harbin Institute of Technology (ShenZhen).</p>
+<p><i class="fa-solid fa-award"></i> <em>2019</em>, <strong>PAT-Programming Ability Test</strong>, Completed the Advanced Level of Programming Ability Test (PAT) with the following scores: 95&#x2F;100.</p>
+<p><i class="fa-solid fa-award"></i> <em>2019</em>, <strong>The 14th Heilongjiang Provincial Collegiate Programming Contest</strong>, Third Prize.</p>
+<p><i class="fa-solid fa-award"></i> <em>2015</em>, <strong>CCF-NOIP2015</strong>, First Prize in NOIP Provincial Improvement Group</p>
+<h3 id="Project-Experience"><a href="#Project-Experience" class="headerlink" title="Project Experience"></a>Project Experience</h3><p><i class="fa-solid fa-diagram-project"></i> <em>2022</em>, <strong>Project JCJQ</strong>, Participated in XXX key technology research for the Internet.</p>
+<h2 id="Skills"><a href="#Skills" class="headerlink" title="Skills"></a>Skills</h2><hr style="border: 2px solid #D9D9D9;" />
+
+<p><i class="fa-solid fa-star-of-david"></i> <strong>Coding</strong>: Python, C++, Java, LaTeX, …</p>
+<p><i class="fa-solid fa-star-of-david"></i> <strong>Python Libs</strong>: PyTorch, TensorFlow Numpy, Pandas, Matplotlib, …</p>
+<p><i class="fa-solid fa-star-of-david"></i> <strong>Databases&#x2F;Big Data</strong>: MySQL, Hadoop, Spark, …</p>
+<p><i class="fa-solid fa-star-of-david"></i> <strong>Languages</strong>: Mandarin Chinese (native), English (IELTS 7.0), …</p>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2022 - 2025 Under World
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;EuJeo
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
+    </div>
+    <script src="/js/main.js"></script>
+    
+    
+
+
+
+
+    
+    <canvas
+    id="fireworks"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 32767"
+    ></canvas>
+    <script src="https://s4.zstatic.net/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="/js/fireworks.min.js"></script>
+    <canvas
+    id="background"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: -1"
+    ></canvas>
+    <script src="/js/background.min.js"></script>
+</body>
+</html>
