@@ -156,9 +156,27 @@
     </div>
     
     <div class="content" v-pre>
-        <pre><code>hexo new &quot;Title&quot;
-hexo g   # 生成页面
-hexo d   # 部署发布
+        <ol>
+<li>Initial submission: Step1 + Step 2</li>
+<li>Normal submission: Step 2</li>
+</ol>
+<ul>
+<li>Step1:</li>
+</ul>
+<pre><code>git remote add origin https://github.com/Gcjh/EuJeo_Hexo_backup.git
+</code></pre>
+<ul>
+<li>Step2:</li>
+</ul>
+<pre><code>hexo new &quot;Title&quot;
+
+git add .
+git commit -m &quot;TLDR&quot;
+git push origin main
+
+hexo clean
+hexo g   
+hexo d  
 </code></pre>
 
     </div>
